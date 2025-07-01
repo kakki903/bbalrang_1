@@ -12,10 +12,15 @@
 }
 
 [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #ffffff;
-    --light-color: #2d2d2d;
-    --border-color: #404040;
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --light-color: #1e1e1e;
+    --dark-color: #0a0a0a;
+    --border-color: #333333;
+    --primary-color: #4fc3f7;
+    --success-color: #66bb6a;
+    --warning-color: #ffb74d;
+    --danger-color: #ef5350;
 }
 
 * {
@@ -261,7 +266,8 @@ body {
 }
 
 [data-theme="dark"] .result-card {
-    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+    border: 1px solid var(--border-color);
 }
 
 .compatibility-card {
@@ -289,8 +295,44 @@ body {
 }
 
 [data-theme="dark"] .chart-container {
-    background: linear-gradient(135deg, #404040 0%, #2d2d2d 100%);
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.06);
+    background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .compatibility-card {
+    background-color: var(--light-color) !important;
+    border: 1px solid var(--border-color);
+}
+
+/* Dark mode navbar improvements */
+[data-theme="dark"] .navbar {
+    background-color: var(--light-color) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Dark mode card improvements */
+[data-theme="dark"] .card {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Dark mode answer option improvements */
+[data-theme="dark"] .answer-option {
+    background-color: var(--light-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .answer-option:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(79, 195, 247, 0.15);
+}
+
+/* Dark mode progress bar */
+[data-theme="dark"] .progress {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
 }
 
 /* Progress Bar Enhancement */

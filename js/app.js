@@ -9,6 +9,7 @@ class WorkplacePersonalityTest {
         this.currentTheme = 'light';
         this.userAnswers = []; // 사용자 답변 저장
         this.currentResult = null; // 현재 결과 저장
+        this.currentChart = null; // 현재 차트 인스턴스 저장
         
         this.init();
     }
@@ -69,6 +70,12 @@ class WorkplacePersonalityTest {
         this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
         localStorage.setItem('theme', this.currentTheme);
         this.applyTheme();
+        
+        // 결과 화면에서 차트 업데이트
+        if (this.currentResult && this.currentChart) {
+            this.currentChart.destroy();
+            this.createAbilityChart(this.currentResult.abilities);
+        }
     }
 
     applyTheme() {
@@ -303,20 +310,34 @@ class WorkplacePersonalityTest {
             abilities.adaptability
         ];
 
-        new Chart(ctx, {
+        // 다크모드 여부 확인
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        
+        // 다크모드에 따른 색상 설정
+        const primaryColor = isDark ? '#4fc3f7' : '#007bff';
+        const backgroundColor = isDark ? 'rgba(79, 195, 247, 0.15)' : 'rgba(0, 123, 255, 0.2)';
+        const textColor = isDark ? '#e0e0e0' : '#212529';
+        const gridColor = isDark ? '#333333' : '#dee2e6';
+        const pointBorderColor = isDark ? '#1e1e1e' : '#fff';
+
+        this.currentChart = new Chart(ctx, {
             type: 'radar',
             data: {
                 labels: abilityLabels,
                 datasets: [{
                     label: this.getText('abilities-title') || '능력치',
                     data: abilityValues,
-                    backgroundColor: 'rgba(0, 123, 255, 0.2)',
-                    borderColor: CONFIG.CHART_COLORS.primary,
-                    borderWidth: 2,
-                    pointBackgroundColor: CONFIG.CHART_COLORS.primary,
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: CONFIG.CHART_COLORS.primary
+                    backgroundColor: backgroundColor,
+                    borderColor: primaryColor,
+                    borderWidth: 3,
+                    pointBackgroundColor: primaryColor,
+                    pointBorderColor: pointBorderColor,
+                    pointBorderWidth: 3,
+                    pointRadius: 6,
+                    pointHoverBackgroundColor: pointBorderColor,
+                    pointHoverBorderColor: primaryColor,
+                    pointHoverRadius: 8,
+                    pointHoverBorderWidth: 3
                 }]
             },
             options: {
@@ -328,20 +349,53 @@ class WorkplacePersonalityTest {
                         max: 5,
                         ticks: {
                             stepSize: 1,
-                            color: getComputedStyle(document.documentElement).getPropertyValue('--text-color')
+                            color: textColor,
+                            font: {
+                                size: 12,
+                                weight: 'bold'
+                            },
+                            backdropColor: 'transparent',
+                            showLabelBackdrop: false
                         },
                         grid: {
-                            color: getComputedStyle(document.documentElement).getPropertyValue('--border-color')
+                            color: gridColor,
+                            lineWidth: 2
                         },
                         angleLines: {
-                            color: getComputedStyle(document.documentElement).getPropertyValue('--border-color')
+                            color: gridColor,
+                            lineWidth: 2
+                        },
+                        pointLabels: {
+                            color: textColor,
+                            font: {
+                                size: 13,
+                                weight: 'bold'
+                            }
                         }
                     }
                 },
                 plugins: {
                     legend: {
                         display: false
+                    },
+                    tooltip: {
+                        backgroundColor: isDark ? '#1e1e1e' : '#ffffff',
+                        titleColor: textColor,
+                        bodyColor: textColor,
+                        borderColor: gridColor,
+                        borderWidth: 1,
+                        cornerRadius: 8,
+                        displayColors: false,
+                        callbacks: {
+                            label: function(context) {
+                                return `${context.label}: ${context.parsed.r}/5`;
+                            }
+                        }
                     }
+                },
+                interaction: {
+                    intersect: false,
+                    mode: 'point'
                 }
             }
         });
