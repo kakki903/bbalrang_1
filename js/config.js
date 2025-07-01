@@ -1,11 +1,11 @@
 // Configuration file for API keys and external services
 const CONFIG = {
     // Kakao Share API
-    KAKAO_APP_KEY: process.env.KAKAO_APP_KEY || 'your_kakao_app_key_here',
+    KAKAO_APP_KEY: 'your_kakao_app_key_here',
     
     // Google AdSense
-    GOOGLE_ADSENSE_CLIENT: process.env.GOOGLE_ADSENSE_CLIENT || 'ca-pub-your-adsense-id',
-    GOOGLE_ADSENSE_SLOT: process.env.GOOGLE_ADSENSE_SLOT || 'your-ad-slot-id',
+    GOOGLE_ADSENSE_CLIENT: 'ca-pub-your-adsense-id',
+    GOOGLE_ADSENSE_SLOT: 'your-ad-slot-id',
     
     // App Settings
     APP_NAME: '직장 성향 테스트',

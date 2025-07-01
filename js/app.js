@@ -355,11 +355,5 @@ document.addEventListener('DOMContentLoaded', () => {
     new WorkplacePersonalityTest();
 });
 
-// Service Worker registration for PWA (optional)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(registration => console.log('SW registered: ', registration))
-            .catch(registrationError => console.log('SW registration failed: ', registrationError));
-    });
-}
+// Service Worker registration removed to avoid 404 errors
+// Add SW later if needed for PWA functionality
