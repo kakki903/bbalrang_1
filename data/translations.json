@@ -19,6 +19,8 @@
     "compatible-title": "잘 맞는 유형",
     "incompatible-title": "안 맞는 유형",
     "share-text": "카카오톡 공유",
+    "share-url-text": "링크 복사",
+    "prev-btn-text": "이전",
     "restart-text": "다시 테스트",
     "footer-text": "© 2025 직장 성향 테스트. Made with ❤️"
   },
@@ -42,6 +44,8 @@
     "compatible-title": "Compatible Types",
     "incompatible-title": "Incompatible Types",
     "share-text": "Share on KakaoTalk",
+    "share-url-text": "Copy Link",
+    "prev-btn-text": "Previous",
     "restart-text": "Restart Test",
     "footer-text": "© 2025 Workplace Personality Test. Made with ❤️"
   }

@@ -99,6 +99,13 @@ This is a frontend-only web application that provides a workplace personality te
 ```
 Changelog:
 - July 01, 2025. Initial setup
+- July 01, 2025. Enhanced UI/UX and added navigation features:
+  * Added previous button functionality in quiz
+  * Implemented result sharing with custom URLs
+  * Enhanced visual design with gradients, animations, and hover effects
+  * Added link copying functionality
+  * Improved mobile responsiveness
+  * Fixed console errors (process undefined, service worker 404)
 ```
 
 ## User Preferences

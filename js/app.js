@@ -7,6 +7,8 @@ class WorkplacePersonalityTest {
         this.translations = {};
         this.currentLang = 'ko';
         this.currentTheme = 'light';
+        this.userAnswers = []; // 사용자 답변 저장
+        this.currentResult = null; // 현재 결과 저장
         
         this.init();
     }
@@ -17,6 +19,7 @@ class WorkplacePersonalityTest {
         this.setupEventListeners();
         this.loadSettings();
         this.applyTranslations();
+        this.loadFromUrl(); // URL에서 결과 로드
     }
 
     async loadData() {
@@ -45,7 +48,9 @@ class WorkplacePersonalityTest {
         document.getElementById('start-btn').addEventListener('click', () => this.startQuiz());
         document.getElementById('theme-toggle').addEventListener('click', () => this.toggleTheme());
         document.getElementById('lang-toggle').addEventListener('click', () => this.toggleLanguage());
+        document.getElementById('prev-btn').addEventListener('click', () => this.previousQuestion());
         document.getElementById('share-kakao').addEventListener('click', () => this.shareKakao());
+        document.getElementById('share-url').addEventListener('click', () => this.shareUrl());
         document.getElementById('restart-btn').addEventListener('click', () => this.restartTest());
     }
 
@@ -107,6 +112,7 @@ class WorkplacePersonalityTest {
         document.getElementById('start-screen').classList.add('d-none');
         document.getElementById('quiz-screen').classList.remove('d-none');
         this.currentQuestion = 0;
+        this.userAnswers = [];
         this.initializeScores();
         this.showQuestion();
     }
@@ -120,6 +126,14 @@ class WorkplacePersonalityTest {
         document.getElementById('progress-bar').style.width = `${progress}%`;
         document.getElementById('question-counter').textContent = `${this.currentQuestion + 1}/${this.questions.length}`;
 
+        // Show/hide previous button
+        const prevBtn = document.getElementById('prev-btn');
+        if (this.currentQuestion > 0) {
+            prevBtn.style.display = 'block';
+        } else {
+            prevBtn.style.display = 'none';
+        }
+
         // Update question text
         const questionText = this.currentLang === 'ko' ? question.question : question.question_en;
         document.getElementById('question-text').textContent = questionText;
@@ -132,7 +146,13 @@ class WorkplacePersonalityTest {
             const optionDiv = document.createElement('div');
             optionDiv.className = 'answer-option';
             optionDiv.textContent = this.currentLang === 'ko' ? option.text : option.text_en;
-            optionDiv.addEventListener('click', () => this.selectAnswer(option.scores));
+            optionDiv.addEventListener('click', () => this.selectAnswer(option.scores, index));
+            
+            // 이전에 선택한 답변이 있으면 표시
+            if (this.userAnswers[this.currentQuestion] === index) {
+                optionDiv.classList.add('selected');
+            }
+            
             optionsContainer.appendChild(optionDiv);
         });
 
@@ -140,7 +160,18 @@ class WorkplacePersonalityTest {
         document.getElementById('quiz-screen').classList.add('fade-in');
     }
 
-    selectAnswer(scores) {
+    selectAnswer(scores, optionIndex) {
+        // 이전 답변이 있다면 점수에서 제거
+        if (this.userAnswers[this.currentQuestion] !== undefined) {
+            const prevAnswer = this.questions[this.currentQuestion].options[this.userAnswers[this.currentQuestion]];
+            Object.keys(prevAnswer.scores).forEach(type => {
+                this.scores[type] -= prevAnswer.scores[type];
+            });
+        }
+
+        // 새로운 답변 저장
+        this.userAnswers[this.currentQuestion] = optionIndex;
+
         // Add scores to totals
         Object.keys(scores).forEach(type => {
             this.scores[type] += scores[type];
@@ -159,6 +190,13 @@ class WorkplacePersonalityTest {
         }, 500);
     }
 
+    previousQuestion() {
+        if (this.currentQuestion > 0) {
+            this.currentQuestion--;
+            this.showQuestion();
+        }
+    }
+
     showResult() {
         document.getElementById('quiz-screen').classList.add('d-none');
         document.getElementById('result-screen').classList.remove('d-none');
@@ -169,6 +207,9 @@ class WorkplacePersonalityTest {
         
         const result = this.results.find(r => r.id === resultType);
         if (!result) return;
+
+        // Store current result for sharing
+        this.currentResult = result;
 
         // Display result
         this.displayResult(result);
@@ -308,27 +349,33 @@ class WorkplacePersonalityTest {
 
     shareKakao() {
         if (typeof Kakao === 'undefined') {
-            alert('카카오 공유 기능을 사용할 수 없습니다.');
+            alert(this.getText('kakao-share-error') || '카카오 공유 기능을 사용할 수 없습니다.');
             return;
         }
 
-        const resultType = Object.keys(this.scores).find(key => 
-            this.scores[key] === Math.max(...Object.values(this.scores))
-        );
-        const result = this.results.find(r => r.id === resultType);
+        if (!this.currentResult) return;
+
+        const resultName = this.currentLang === 'ko' ? this.currentResult.name : this.currentResult.name_en;
+        const shareUrl = this.generateShareUrl();
 
         Kakao.Link.sendDefault({
             objectType: 'feed',
             content: {
                 title: CONFIG.SHARE_TITLE,
-                description: `나의 직장 캐릭터는 "${result.name}"입니다! 당신도 테스트해보세요!`,
+                description: `나의 직장 캐릭터는 "${resultName}"입니다! 당신도 테스트해보세요!`,
                 imageUrl: CONFIG.SHARE_IMAGE,
                 link: {
-                    mobileWebUrl: CONFIG.APP_URL,
-                    webUrl: CONFIG.APP_URL
+                    mobileWebUrl: shareUrl,
+                    webUrl: shareUrl
                 }
             },
             buttons: [{
+                title: '결과 보기',
+                link: {
+                    mobileWebUrl: shareUrl,
+                    webUrl: shareUrl
+                }
+            }, {
                 title: '테스트 하러 가기',
                 link: {
                     mobileWebUrl: CONFIG.APP_URL,
@@ -338,8 +385,73 @@ class WorkplacePersonalityTest {
         });
     }
 
+    shareUrl() {
+        const shareUrl = this.generateShareUrl();
+        
+        if (navigator.share) {
+            // 모바일에서 네이티브 공유
+            navigator.share({
+                title: CONFIG.SHARE_TITLE,
+                text: `나의 직장 캐릭터는 "${this.currentResult.name}"입니다!`,
+                url: shareUrl
+            }).catch(err => console.log('Share failed:', err));
+        } else {
+            // 데스크톱에서 클립보드 복사
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                const btn = document.getElementById('share-url');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check me-2"></i>복사됨!';
+                btn.classList.add('btn-success');
+                btn.classList.remove('btn-primary');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('btn-success');
+                    btn.classList.add('btn-primary');
+                }, 2000);
+            }).catch(err => {
+                alert('링크 복사에 실패했습니다. ' + shareUrl);
+            });
+        }
+    }
+
+    generateShareUrl() {
+        const baseUrl = window.location.origin + window.location.pathname;
+        const params = new URLSearchParams({
+            result: this.currentResult.id,
+            lang: this.currentLang
+        });
+        return `${baseUrl}?${params.toString()}`;
+    }
+
+    // URL에서 결과 로드
+    loadFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const resultId = params.get('result');
+        const lang = params.get('lang');
+        
+        if (resultId && this.results.length > 0) {
+            const result = this.results.find(r => r.id === resultId);
+            if (result) {
+                if (lang && (lang === 'ko' || lang === 'en')) {
+                    this.currentLang = lang;
+                    this.updateLanguageButton();
+                    this.applyTranslations();
+                }
+                
+                this.currentResult = result;
+                document.getElementById('start-screen').classList.add('d-none');
+                document.getElementById('result-screen').classList.remove('d-none');
+                this.displayResult(result);
+                this.createAbilityChart(result.abilities);
+            }
+        }
+    }
+
     restartTest() {
         this.currentQuestion = 0;
+        this.userAnswers = [];
+        this.currentResult = null;
         this.initializeScores();
         
         document.getElementById('result-screen').classList.add('d-none');
@@ -347,6 +459,11 @@ class WorkplacePersonalityTest {
         
         // Reset progress bar
         document.getElementById('progress-bar').style.width = '0%';
+        
+        // Clear URL parameters
+        const url = new URL(window.location);
+        url.search = '';
+        window.history.replaceState({}, '', url);
     }
 }
 

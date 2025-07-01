@@ -152,7 +152,7 @@ body {
     color: var(--text-color);
 }
 
-/* Animation for smooth transitions */
+/* Animations and Effects */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -164,8 +164,32 @@ body {
     }
 }
 
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px rgba(255, 193, 7, 0.3); }
+    50% { text-shadow: 0 0 20px rgba(255, 193, 7, 0.6), 0 0 30px rgba(255, 193, 7, 0.4); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .fade-in {
     animation: fadeIn 0.5s ease-out;
+}
+
+.emoji-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
 }
 
 /* Mobile responsiveness */
@@ -213,9 +237,71 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Share button hover effect */
-.btn-warning:hover {
+/* Enhanced Button Styles */
+.btn-warning:hover,
+.share-btn:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.btn-outline-secondary:hover {
+    transform: scale(1.05);
+}
+
+/* Enhanced Card Styles */
+.result-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .result-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+.compatibility-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.compatibility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .compatibility-card:hover {
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Chart Container Enhancement */
+.chart-container {
+    position: relative;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] .chart-container {
+    background: linear-gradient(135deg, #404040 0%, #2d2d2d 100%);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.06);
+}
+
+/* Progress Bar Enhancement */
+.progress {
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 10px;
+    background: linear-gradient(90deg, #007bff 0%, #28a745 50%, #ffc107 100%);
 }
 
 /* Custom scrollbar */
