@@ -1,0 +1,806 @@
+[
+  {
+    "id": 1,
+    "question": "팀 회식에서 메뉴를 정해야 할 때 나는?",
+    "question_en": "When deciding on a menu for team dinner, I:",
+    "options": [
+      {
+        "text": "라떼는 삼겹살이지!",
+        "text_en": "Back in my day, it was always BBQ!",
+        "scores": {
+          "boomer": 4,
+          "comedian": 2,
+          "mz": 0,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "요즘 핫한 데 어때요?",
+        "text_en": "How about that trendy place?",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 4,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 2,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "아무거나 괜찮아요~",
+        "text_en": "Anything is fine with me~",
+        "scores": {
+          "boomer": 1,
+          "comedian": 3,
+          "mz": 2,
+          "spy": 3,
+          "survivor": 2,
+          "free_spirit": 2,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "오늘은 다이어트라 패스!",
+        "text_en": "I'm on a diet today, so I'll pass!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 3,
+          "explorer": 2,
+          "strategist": 2,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "단톡방에 'ㅋㅋㅋ'만 10줄 올라올 때 내 반응은?",
+    "question_en": "When the group chat is filled with 10 lines of 'lol', my reaction is:",
+    "options": [
+      {
+        "text": "이게 뭐가 웃기지?",
+        "text_en": "What's so funny about this?",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "ㅋㅋㅋ 한 줄 추가",
+        "text_en": "Add one more 'lol'",
+        "scores": {
+          "boomer": 1,
+          "comedian": 4,
+          "mz": 2,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 2,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "읽고 넘긴다",
+        "text_en": "Read and move on",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 2,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "이모티콘 폭탄 투척!",
+        "text_en": "Throw an emoji bomb!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 4,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 3,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "점심시간, 줄이 긴 식당을 보면?",
+    "question_en": "During lunch time, when I see a restaurant with a long line:",
+    "options": [
+      {
+        "text": "예전엔 이런 거 없었는데…",
+        "text_en": "This didn't exist back in the day...",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "줄 서서라도 먹자!",
+        "text_en": "Let's wait in line and eat!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 4,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 2,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "근처 조용한 데 가자~",
+        "text_en": "Let's go to a quiet place nearby~",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "그냥 편의점에서 때우자!",
+        "text_en": "Let's just grab something from the convenience store!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "갑자기 팀장이 '우리 회의 좀 하자'고 할 때?",
+    "question_en": "When the team leader suddenly says 'Let's have a meeting':",
+    "options": [
+      {
+        "text": "드디어 내 의견 낼 때군!",
+        "text_en": "Finally time to share my opinion!",
+        "scores": {
+          "boomer": 3,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 1,
+          "strategist": 4,
+          "ace": 3
+        }
+      },
+      {
+        "text": "또 회의야…?",
+        "text_en": "Another meeting...?",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 2,
+          "survivor": 2,
+          "free_spirit": 2,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "조용히 듣기만 한다",
+        "text_en": "Just listen quietly",
+        "scores": {
+          "boomer": 2,
+          "comedian": 1,
+          "mz": 1,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 2,
+          "ace": 2
+        }
+      },
+      {
+        "text": "몰래 딴짓 준비!",
+        "text_en": "Secretly prepare to do something else!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 3,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "회사 복지로 '반려동물 동반 출근'이 생긴다면?",
+    "question_en": "If 'bring your pet to work' becomes a company benefit:",
+    "options": [
+      {
+        "text": "라떼는 상상도 못 할 일!",
+        "text_en": "Unimaginable back in my day!",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "완전 찬성! 강아지 데려온다",
+        "text_en": "Totally agree! Bringing my dog",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 4,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 3,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "그냥 관심 없다",
+        "text_en": "Just not interested",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "이참에 고양이 입양?",
+        "text_en": "Maybe adopt a cat for this occasion?",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "신입이 '이거 왜 이렇게 해요?' 물어보면?",
+    "question_en": "When a new employee asks 'Why do we do it this way?':",
+    "options": [
+      {
+        "text": "라떼는 말이야…",
+        "text_en": "Back in my day...",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "좋은 질문이네, 알려줄게",
+        "text_en": "Good question, let me explain",
+        "scores": {
+          "boomer": 1,
+          "comedian": 3,
+          "mz": 4,
+          "spy": 2,
+          "survivor": 2,
+          "free_spirit": 2,
+          "explorer": 2,
+          "strategist": 2,
+          "ace": 4
+        }
+      },
+      {
+        "text": "내가 알긴 뭘…",
+        "text_en": "What would I know...",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "검색해보자!",
+        "text_en": "Let's search for it!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 4,
+          "explorer": 3,
+          "strategist": 2,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "사무실 에어컨이 너무 세게 나올 때 나는?",
+    "question_en": "When the office air conditioner is too strong, I:",
+    "options": [
+      {
+        "text": "옛날엔 선풍기도 없었는데…",
+        "text_en": "We didn't even have fans back then...",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "담요 챙겨야지!",
+        "text_en": "Need to bring a blanket!",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 2,
+          "survivor": 3,
+          "free_spirit": 2,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "그냥 참고 일한다",
+        "text_en": "Just endure it and work",
+        "scores": {
+          "boomer": 2,
+          "comedian": 1,
+          "mz": 1,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 2,
+          "ace": 2
+        }
+      },
+      {
+        "text": "몰래 온도 조절!",
+        "text_en": "Secretly adjust the temperature!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "금요일 퇴근 10분 전, 급한 일이 생기면?",
+    "question_en": "10 minutes before leaving on Friday, when urgent work comes up:",
+    "options": [
+      {
+        "text": "이럴 줄 알았다…",
+        "text_en": "I knew this would happen...",
+        "scores": {
+          "boomer": 2,
+          "comedian": 1,
+          "mz": 1,
+          "spy": 3,
+          "survivor": 2,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 3,
+          "ace": 2
+        }
+      },
+      {
+        "text": "빠르게 처리하고 퇴근!",
+        "text_en": "Handle it quickly and leave!",
+        "scores": {
+          "boomer": 1,
+          "comedian": 1,
+          "mz": 2,
+          "spy": 1,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 2,
+          "ace": 4
+        }
+      },
+      {
+        "text": "월요일로 미룬다",
+        "text_en": "Postpone it to Monday",
+        "scores": {
+          "boomer": 0,
+          "comedian": 1,
+          "mz": 3,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 3,
+          "explorer": 2,
+          "strategist": 0,
+          "ace": 0
+        }
+      },
+      {
+        "text": "상황을 신속히 파악, 필요한 일은 끝까지 책임지고 처리!",
+        "text_en": "Quickly assess the situation and handle necessary work responsibly!",
+        "scores": {
+          "boomer": 2,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 2,
+          "survivor": 2,
+          "free_spirit": 1,
+          "explorer": 2,
+          "strategist": 3,
+          "ace": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "사내 공지에 '자율 복장'이 도입된다면?",
+    "question_en": "If 'casual dress code' is introduced in the company:",
+    "options": [
+      {
+        "text": "정장은 기본이지!",
+        "text_en": "Business attire is basic!",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "후드티 입고 출근!",
+        "text_en": "Going to work in a hoodie!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 4,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 3,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "아무거나 편한 게 최고",
+        "text_en": "Anything comfortable is best",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 2,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "오늘은 코스프레 도전!",
+        "text_en": "Today I'll try cosplay!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 3,
+          "strategist": 1,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "점심시간에 동료가 '밥 같이 먹어요!' 할 때?",
+    "question_en": "When a colleague says 'Let's eat lunch together!' during lunch time:",
+    "options": [
+      {
+        "text": "이미 도시락 싸왔는데…",
+        "text_en": "I already brought my lunch box...",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "좋아요! 어디 갈까요?",
+        "text_en": "Great! Where shall we go?",
+        "scores": {
+          "boomer": 1,
+          "comedian": 4,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 2,
+          "explorer": 2,
+          "strategist": 2,
+          "ace": 3
+        }
+      },
+      {
+        "text": "혼밥이 더 편한데…",
+        "text_en": "Eating alone is more comfortable...",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "밥 대신 커피 한 잔 어때요?",
+        "text_en": "How about a cup of coffee instead of a meal?",
+        "scores": {
+          "boomer": 0,
+          "comedian": 3,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "사내 이벤트에 참여하라는 메일이 왔을 때?",
+    "question_en": "When you receive an email asking to participate in a company event:",
+    "options": [
+      {
+        "text": "이런 건 젊은 친구들이나…",
+        "text_en": "This is for young people...",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 2,
+          "ace": 1
+        }
+      },
+      {
+        "text": "무조건 참여! 상품 노림!",
+        "text_en": "Definitely participating! Aiming for prizes!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 3,
+          "mz": 4,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 3,
+          "explorer": 3,
+          "strategist": 1,
+          "ace": 3
+        }
+      },
+      {
+        "text": "구경만 한다",
+        "text_en": "Just watch",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 2,
+          "spy": 4,
+          "survivor": 3,
+          "free_spirit": 1,
+          "explorer": 1,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "내가 직접 기획해볼까?",
+        "text_en": "Should I plan it myself?",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 4,
+          "strategist": 2,
+          "ace": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "갑자기 팀장이 '오늘은 재택근무!'라고 하면?",
+    "question_en": "When the team leader suddenly says 'Work from home today!':",
+    "options": [
+      {
+        "text": "역시 사무실이 집중 잘 돼",
+        "text_en": "The office is still better for concentration",
+        "scores": {
+          "boomer": 4,
+          "comedian": 1,
+          "mz": 0,
+          "spy": 2,
+          "survivor": 1,
+          "free_spirit": 0,
+          "explorer": 0,
+          "strategist": 3,
+          "ace": 1
+        }
+      },
+      {
+        "text": "침대와 한 몸이 된다",
+        "text_en": "Become one with the bed",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 2,
+          "free_spirit": 4,
+          "explorer": 2,
+          "strategist": 1,
+          "ace": 2
+        }
+      },
+      {
+        "text": "카페에서 분위기 내며 일한다",
+        "text_en": "Work at a cafe with a nice atmosphere",
+        "scores": {
+          "boomer": 1,
+          "comedian": 2,
+          "mz": 4,
+          "spy": 2,
+          "survivor": 2,
+          "free_spirit": 3,
+          "explorer": 3,
+          "strategist": 2,
+          "ace": 3
+        }
+      },
+      {
+        "text": "오늘은 여행지에서 화상회의!",
+        "text_en": "Video conference from a travel destination today!",
+        "scores": {
+          "boomer": 0,
+          "comedian": 2,
+          "mz": 3,
+          "spy": 1,
+          "survivor": 1,
+          "free_spirit": 4,
+          "explorer": 4,
+          "strategist": 1,
+          "ace": 4
+        }
+      }
+    ]
+  }
+]
