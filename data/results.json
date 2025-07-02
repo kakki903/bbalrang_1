@@ -5,7 +5,7 @@
     "name_en": "Legendary Boomer with Latte Power",
     "description": "\"라떼는 말이야~\"로 시작해 \"요즘 애들은…\"으로 끝나는, 전설의 라떼파워 보유자. 신입의 '이거 왜요?' 한마디에 심장이 쫄깃해지고, 회식 때는 삼겹살 집 예약은 필수! 단톡방엔 'ㅎㅎ'만 남기며, 변화에는 몸서리치지만 책임감만큼은 누구보다 강하다. 당신이 지나간 자리엔 항상 '경험'이라는 이름의 먼지가 남는다.",
     "description_en": "Starting with \"Back in my day...\" and ending with \"Kids these days...\", you're the legendary holder of latte power. A new employee's single \"Why?\" makes your heart skip, and booking a BBQ place for company dinners is essential! You only leave 'hehe' in group chats, shudder at change, but your sense of responsibility is stronger than anyone's. Wherever you've been, there's always dust called 'experience' left behind.",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/boomer.png",
     "emoji": "👴",
     "abilities": {
       "responsibility": 5,
@@ -24,7 +24,7 @@
     "name_en": "Atmosphere Creator Comedian",
     "description": "\"내가 있으면 사무실이 곧 예능!\" 드립력과 리액션으로 팀을 들었다 놨다, 회식·워크숍 필수 인재. 분위기 싸해지면 눈치 100단 발동, 조용한 관찰자 옆에서 혼자 개그치다 민망해질 때도. 당신의 존재만으로 회의실이 한층 밝아진다. 하지만 가끔은 '진지함'이 필요할지도?",
     "description_en": "\"With me here, the office becomes a variety show!\" With wit and reactions, you lift the team up and down, an essential talent for dinners and workshops. When the atmosphere gets cold, your 100-level awareness kicks in, though you sometimes feel embarrassed joking alone next to quiet observers. Your presence alone brightens the meeting room. But sometimes 'seriousness' might be needed?",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/comedian.png",
     "emoji": "🎭",
     "abilities": {
       "responsibility": 3,
@@ -43,7 +43,7 @@
     "name_en": "Representative MZ Generation",
     "description": "\"이거 비효율적 아닌가요?\"를 입에 달고, 퇴근 후엔 자기계발+취미 폭주. 단톡방에선 밈·짤로 소통, 꼰대 직원에겐 '쟨 또 뭐래'. 조직의 변화를 이끄는 혁신가이자, 워라밸을 위해선 사장님과도 맞짱! 하지만 '라떼'와 마주치면 피로도가 급상승. 당신 덕분에 회사가 조금씩 젊어진다.",
     "description_en": "Always saying \"Isn't this inefficient?\" and going full throttle on self-development + hobbies after work. Communicating with memes and images in group chats, thinking \"What's he saying now\" about boomer employees. An innovator leading organizational change, willing to confront even the boss for work-life balance! But fatigue rapidly increases when facing 'latte' people. Thanks to you, the company is gradually getting younger.",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/mz.png",
     "emoji": "📱",
     "abilities": {
       "responsibility": 3,
@@ -62,7 +62,7 @@
     "name_en": "Silent Company Spy",
     "description": "\"내가 말은 없지만 다 보고 있다…\" 회의 때 조용, 그러나 모두의 움직임을 꿰뚫는 사내 스파이. 중요한 순간엔 한 마디로 정리, 팀원들은 당신의 한마디에 무릎을 탁! 필요할 때만 등장해 존재감 폭발. 하지만 분위기 메이커 옆에선 리액션 부담에 땀샘 폭발.",
     "description_en": "\"I may not speak much, but I see everything...\" Quiet during meetings, but a company spy who sees through everyone's movements. When it matters, you summarize in one sentence, making teammates slap their knees! You only appear when needed, exploding with presence. But next to atmosphere makers, your sweat glands explode under reaction pressure.",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/spy.png",
     "emoji": "🕵️",
     "abilities": {
       "responsibility": 4,
@@ -81,7 +81,7 @@
     "name_en": "100-Level Survival King",
     "description": "\"눈치로 밥 먹고 산다!\" 회의실 온도부터 상사 기분까지 레이더 풀가동. 어디서든 살아남는 적응력 만렙, 사내의 카멜레온. 분위기 따라 색깔 바꾸는 능력자, 하지만 즉흥적인 자유 영혼과는 궁합이 영… 계획 없는 일정에 멘붕!",
     "description_en": "\"I live by reading the room!\" Full radar operation from meeting room temperature to boss's mood. Max-level adaptability to survive anywhere, the company's chameleon. A master at changing colors according to atmosphere, but compatibility with spontaneous free spirits is zero... Mental breakdown at unplanned schedules!",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/survivor.png",
     "emoji": "🦎",
     "abilities": {
       "responsibility": 4,
@@ -100,7 +100,7 @@
     "name_en": "Free Spirit Living for Today",
     "description": "\"내일은 내일의 태양이 뜬다!\" 즉흥 회식, 번개 모임, 퇴근 후엔 어디론가 사라짐. 계획보단 느낌, 자유분방 끝판왕. 사내 이벤트, 번개 회식, 신기한 프로젝트엔 무조건 1등 참여. 하지만 꼰대와는 1분도 못 버팀. 당신이 있으면 회사가 조금 더 재밌어진다.",
     "description_en": "\"Tomorrow's sun will rise tomorrow!\" Spontaneous dinners, lightning gatherings, disappearing somewhere after work. Feeling over planning, the ultimate free spirit. Always first to participate in company events, lightning dinners, and interesting projects. But can't last even a minute with boomers. With you around, the company becomes a little more fun.",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/free_spirit.png",
     "emoji": "🦋",
     "abilities": {
       "responsibility": 2,
@@ -119,7 +119,7 @@
     "name_en": "Project Destroyer Explorer",
     "description": "\"새로운 건 다 내 거!\" 신기한 프로젝트, 사내 이벤트 1등 참여자. 변화와 도전을 즐기며, 실패도 경험치로 삼음. 실험정신과 호기심으로 회사에 신선한 바람을 불어넣지만, 꼰대와 전략가 앞에선 '이상한 애' 취급. 그래도 당신 덕분에 회사가 진화한다!",
     "description_en": "\"Everything new is mine!\" First participant in interesting projects and company events. Enjoying change and challenges, turning even failures into experience points. Bringing fresh air to the company with experimental spirit and curiosity, but treated as 'the weird one' by boomers and strategists. Still, thanks to you, the company evolves!",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/explorer.png",
     "emoji": "🚀",
     "abilities": {
       "responsibility": 3,
@@ -138,7 +138,7 @@
     "name_en": "Excel God PPT King Strategist",
     "description": "\"계획 없인 못 살아!\" 엑셀·파워포인트 장인, 회의 때마다 논리정연. 팀원들에겐 든든하지만, 즉흥 상황엔 당황. 완벽한 계획과 치밀한 전략으로 팀을 이끌지만 자유 영혼과 있으면 심장이 쫄깃. 당신 덕분에 회사가 돌아간다!",
     "description_en": "\"Can't live without a plan!\" Excel and PowerPoint master, logical and coherent in every meeting. Reliable to teammates, but flustered by spontaneous situations. Leading the team with perfect plans and meticulous strategies, but heart gets queasy around free spirits. The company runs because of you!",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/strategist.png",
     "emoji": "📊",
     "abilities": {
       "responsibility": 5,
@@ -157,7 +157,7 @@
     "name_en": "Company's Ultimate Ace",
     "description": "\"이 사람 없으면 회사가 안 돌아간다!\"라는 소문이 자자한 진정한 에이스. 기획, 실행, 소통, 창의력, 적응력까지 만렙. 회의실에선 전략가, 회식에선 분위기 메이커, 프로젝트에선 탐험가, 위기 땐 꼰대의 책임감까지 장착! 모두의 롤모델이자, 사내 밈의 주인공. 단점은? 너무 완벽해서 동료들이 부담스러워할 수 있음. 당신은 회사의 보물이다!",
     "description_en": "The true ace with rumors that \"the company can't function without this person!\" Max level in planning, execution, communication, creativity, and adaptability. A strategist in meeting rooms, atmosphere maker at dinners, explorer in projects, and even equipped with boomer responsibility during crises! Everyone's role model and protagonist of company memes. The downside? You might be too perfect, making colleagues feel burdened. You are the company's treasure!",
-    "image": "",
+    "image": "https://workplace.bbalrang.com/images/ace.png",
     "emoji": "👑",
     "abilities": {
       "responsibility": 5,
