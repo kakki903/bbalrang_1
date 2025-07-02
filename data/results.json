@@ -13,10 +13,10 @@
       "creativity": 2,
       "adaptability": 1
     },
-    "compatible": "분위기 제조기 개그러 (옛날 얘기도 드립으로 승화, 세대차도 웃음으로 해결하는 환상의 콤비)",
-    "compatible_en": "Atmosphere Creator Comedian (A fantastic combo that turns old stories into jokes and solves generation gaps with laughter)",
-    "incompatible": "요즘것들 대표 MZ (서로 다른 언어를 쓰는 듯, 소통 자체가 고역)",
-    "incompatible_en": "Representative MZ (Like speaking different languages, communication itself is torture)"
+    "compatible": "분위기 제조기 개그러 (개그러가 던지는 드립에 '라떼는~'으로 맞받아치면, 회식이 토크쇼로 변신! 세대차도 개그로 녹여내는 환상의 케미. 둘이 모이면 '꼰대력'과 '드립력'이 폭발, 회사에 웃음꽃 만개!)",
+    "compatible_en": "Atmosphere Creator Comedian (When the comedian throws a joke, you counter with 'Back in my day~' and suddenly, dinner turns into a talk show! Generation gaps melt into laughter—your boomer power and their wit make the office bloom with comedy.)",
+    "incompatible": "요즘것들 대표 MZ (MZ가 '혁신!' 외치면, 당신은 '전통!'을 외침. 밈과 라떼파워가 충돌하면 단톡방이 얼어붙고, 회의는 평행선. 서로의 언어가 외계어처럼 들리는 극과 극 조합!)",
+    "incompatible_en": "Representative MZ Generation (When the MZ shouts 'Innovation!', you counter with 'Tradition!' Memes meet latte power and the group chat freezes, meetings go nowhere—it's like speaking different alien languages!)"
   },
   {
     "id": "comedian",
@@ -32,10 +32,10 @@
       "creativity": 4,
       "adaptability": 4
     },
-    "compatible": "오늘만 산다 자유 영혼 (둘이서 즉흥 여행, 번개 회식, 재미 폭발 콤비. 웃음과 자유로움의 시너지!)",
-    "compatible_en": "Free Spirit Living for Today (Together you create spontaneous trips, lightning dinners, and explosive fun. Synergy of laughter and freedom!)",
-    "incompatible": "말 없는 사내 스파이 (개그에 무반응인 스파이 앞에서 혼자 북치고 장구치다 지쳐감)",
-    "incompatible_en": "Silent Company Spy (Getting exhausted from performing alone in front of an unresponsive spy)"
+    "compatible": "오늘만 산다 자유 영혼 (자유 영혼과 즉흥 여행을 떠나면, 어디서든 파티 오픈! 둘이 모이면 웃음이 폭발하고, 팀 분위기는 무한 업! '오늘만 산다'와 '개그'의 시너지로 회사가 놀이터로 변신!)",
+    "compatible_en": "Free Spirit Living for Today (Go on a spontaneous trip with the free spirit and every place becomes a party! Together, you create an explosion of laughter and endless good vibes—your synergy turns the company into a playground!)",
+    "incompatible": "말 없는 사내 스파이 (스파이 앞에선 드립이 공중분해! 아무 반응 없는 벽에 농담을 던지다 보면, 개그러도 결국 침묵을 배우게 됨. 리액션 실종, 민망함 폭발!)",
+    "incompatible_en": "Silent Company Spy (Your jokes vanish into thin air in front of the spy! Tossing jokes at a stone wall, even the comedian learns silence. No reactions, only awkwardness!)"
   },
   {
     "id": "mz",
@@ -51,10 +51,10 @@
       "creativity": 5,
       "adaptability": 5
     },
-    "compatible": "프로젝트 파괴왕 탐험가 (함께 새로운 도전하며 회사에 혁신을 가져오는 변화의 듀오)",
-    "compatible_en": "Project Destroyer Explorer (A duo of change that brings innovation to the company by taking on new challenges together)",
-    "incompatible": "라떼파워 전설의 꼰대 (세대 차이로 인한 영원한 평행선, 서로 이해할 수 없는 사이)",
-    "incompatible_en": "Legendary Boomer with Latte Power (Eternal parallel lines due to generational differences, unable to understand each other)"
+    "compatible": "프로젝트 파괴왕 탐험가 (탐험가와 손잡으면 '혁신'이 기본값! 둘이 모이면 사내 시스템이 매일 리셋, 실패도 밈으로 승화! 변화가 일상인 하이퍼 듀오.)",
+    "compatible_en": "Project Destroyer Explorer (With the explorer, 'innovation' is the default! Together, company systems reset daily and even failures become memes. Change is your daily routine—an unstoppable duo!)",
+    "incompatible": "라떼파워 전설의 꼰대 (꼰대와 MZ가 만나면, 회의는 '라떼는~' vs '요즘은~' 토론장. 밈과 전통의 끝없는 대립, 서로의 존재만으로 피로도 200%!)",
+    "incompatible_en": "Legendary Boomer with Latte Power (When the boomer and MZ meet, meetings become endless 'Back in my day~' vs 'These days~' debates. Memes clash with tradition, and just being in the same room is exhausting!)"
   },
   {
     "id": "spy",
@@ -70,10 +70,10 @@
       "creativity": 3,
       "adaptability": 4
     },
-    "compatible": "눈치 100단 생존왕 (둘이서 말없이도 척척, 분위기 파악 만렙 콤비. 서로 말 없어도 통함.)",
-    "compatible_en": "100-Level Survival King (A max-level combo that works smoothly without words, understanding atmosphere. You understand each other without speaking.)",
-    "incompatible": "분위기 제조기 개그러 (끊임없는 드립과 리액션 요구에 정신적 피로 누적)",
-    "incompatible_en": "Atmosphere Creator Comedian (Mental fatigue accumulates from endless jokes and reaction demands)"
+    "compatible": "눈치 100단 생존왕 (둘이서 말없이도 텔레파시! 위기 상황에선 눈빛 한 번이면 작전 개시. 조용한 카리스마와 눈치의 만남, 사내 생존력 끝판왕 듀오!)",
+    "compatible_en": "100-Level Survival King (You communicate telepathically! In a crisis, one glance and the plan is on. Quiet charisma meets awareness—an unbeatable survival duo!)",
+    "incompatible": "분위기 제조기 개그러 (개그러의 드립에 무반응이면, 사무실에 정적만 흐름. 리액션 압박에 땀샘 폭발, 결국 둘 다 눈치게임만 하다 퇴근!)",
+    "incompatible_en": "Atmosphere Creator Comedian (No reaction to the comedian’s jokes and the office falls silent. Under pressure to react, you sweat bullets—eventually, you both just play the silent game until quitting time!)"
   },
   {
     "id": "survivor",
@@ -89,10 +89,10 @@
       "creativity": 2,
       "adaptability": 5
     },
-    "compatible": "말 없는 사내 스파이 (둘이서 말없이도 척척, 분위기 파악 만렙 콤비. 서로 말 없어도 통함.)",
-    "compatible_en": "Silent Company Spy (A max-level combo that works smoothly without words, understanding atmosphere. You understand each other without speaking.)",
-    "incompatible": "오늘만 산다 자유 영혼 (예측 불가능한 행동에 눈치 레이더 오류 발생, 스트레스 만렙)",
-    "incompatible_en": "Free Spirit Living for Today (Awareness radar errors from unpredictable behavior, max-level stress)"
+    "compatible": "말 없는 사내 스파이 (스파이와 함께라면, 굳이 말하지 않아도 척척! 둘이 있으면 회의실이 무전기 없이도 작동, 위기 상황엔 눈빛만으로 작전 개시!)",
+    "compatible_en": "Silent Company Spy (With the spy, you don’t need words—everything just clicks! The meeting room runs without walkie-talkies, and in a crisis, one look is all it takes!)",
+    "incompatible": "오늘만 산다 자유 영혼 (자유 영혼의 '오늘 뭐하지?' 한마디에 생존왕의 눈치 레이더 오류! 계획 없는 스케줄에 멘탈 붕괴, 둘이 만나면 예측불가 대혼란!)",
+    "incompatible_en": "Free Spirit Living for Today (The free spirit’s 'What should we do today?' crashes your awareness radar! Unplanned schedules cause mental breakdowns—together, you create unpredictable chaos!)"
   },
   {
     "id": "free_spirit",
@@ -108,10 +108,10 @@
       "creativity": 5,
       "adaptability": 3
     },
-    "compatible": "분위기 제조기 개그러 (둘이서 즉흥 여행, 번개 회식, 재미 폭발 콤비. 웃음과 자유로움의 시너지!)",
-    "compatible_en": "Atmosphere Creator Comedian (Together you create spontaneous trips, lightning dinners, and explosive fun. Synergy of laughter and freedom!)",
-    "incompatible": "엑셀신 PPT왕 전략가 (계획 없는 행동에 전략가는 속병, 서로 다른 세계 사람)",
-    "incompatible_en": "Excel God PPT King Strategist (Strategists get heartburn from unplanned actions, people from different worlds)"
+    "compatible": "분위기 제조기 개그러 (개그러와 함께라면, 회사도 클럽! 즉흥 번개, 드립 파티, 둘이 있으면 사내 분위기 자동 업! 웃음과 자유의 시너지로 월요병도 퇴치!)",
+    "compatible_en": "Atmosphere Creator Comedian (With the comedian, the office turns into a club! Spontaneous gatherings, joke parties—together, you automatically boost the company mood. The synergy of laughter and freedom even cures the Monday blues!)",
+    "incompatible": "엑셀신 PPT왕 전략가 (전략가의 계획표를 보면 자유 영혼은 숨이 턱! 계획 없는 행동에 전략가는 혈압 상승, 둘이 만나면 일정표가 찢어짐!)",
+    "incompatible_en": "Excel God PPT King Strategist (Seeing the strategist’s schedule, the free spirit feels suffocated! Unplanned actions make the strategist’s blood pressure spike—together, your calendars get shredded!)"
   },
   {
     "id": "explorer",
@@ -127,10 +127,10 @@
       "creativity": 5,
       "adaptability": 4
     },
-    "compatible": "오늘만 산다 자유 영혼 (함께 도전, 실패도 추억으로 남기는 모험 듀오. 둘이 있으면 회사가 놀이터!)",
-    "compatible_en": "Free Spirit Living for Today (An adventure duo that takes on challenges together, turning even failures into memories. With you two, the company becomes a playground!)",
-    "incompatible": "라떼파워 전설의 꼰대 (새로운 시도에 '그런 거 해봤자...' 부정적 반응, 의욕 저하)",
-    "incompatible_en": "Legendary Boomer with Latte Power (Negative reactions like 'What's the point of trying that...' to new attempts, motivation decreases)"
+    "compatible": "오늘만 산다 자유 영혼 (자유 영혼과 탐험가가 만나면, 회사가 곧 놀이터! 실패도 추억, 도전은 일상! 둘이 있으면 프로젝트가 매번 신박하게 터짐!)",
+    "compatible_en": "Free Spirit Living for Today (With the free spirit, the explorer turns the company into a playground! Failures become memories, challenges are routine—together, every project explodes with new ideas!)",
+    "incompatible": "라떼파워 전설의 꼰대 (탐험가가 '새로운 시도!' 외치면, 꼰대는 '그런 거 해봤자...'로 응수. 도전정신과 전통의 충돌로 프로젝트가 출발선에서 멈춤!)",
+    "incompatible_en": "Legendary Boomer with Latte Power (When the explorer shouts 'new challenge!', the boomer counters with 'what’s the point…'. Your adventurous spirit and their tradition clash, stalling projects at the starting line!)"
   },
   {
     "id": "strategist",
@@ -146,10 +146,10 @@
       "creativity": 3,
       "adaptability": 2
     },
-    "compatible": "라떼파워 전설의 꼰대 (둘이서 계획 세우고, 규칙 지키는 데 환상의 호흡. 회사의 안정과 질서 담당!)",
-    "compatible_en": "Legendary Boomer with Latte Power (Perfect harmony in planning and following rules together. In charge of company stability and order!)",
-    "incompatible": "오늘만 산다 자유 영혼 (계획 무시하는 자유분방함에 혈압 상승, 예측 불가능한 행동에 스트레스 폭발)",
-    "incompatible_en": "Free Spirit Living for Today (Blood pressure rises from free-spirited plan ignoring, stress explodes from unpredictable behavior)"
+    "compatible": "라떼파워 전설의 꼰대 (계획과 규칙, 책임감의 쌍두마차! 둘이 모이면 회사는 질서의 왕국. 꼼꼼한 전략과 풍부한 경험으로 프로젝트가 척척 굴러감!)",
+    "compatible_en": "Legendary Boomer with Latte Power (The twin engines of planning and responsibility! Together, you rule the kingdom of order. Meticulous strategy and rich experience keep projects running smoothly!)",
+    "incompatible": "오늘만 산다 자유 영혼 (전략가의 엑셀 파일에 자유 영혼이 '즉흥'을 입력하면, 파일이 에러남! 계획 무시하는 행동에 혈압 상승, 둘이 있으면 일정표가 증발!)",
+    "incompatible_en": "Free Spirit Living for Today (If the free spirit types 'spontaneity' into your Excel file, it crashes! Unplanned actions spike your blood pressure—together, your schedules evaporate!)"
   },
   {
     "id": "ace",
@@ -165,9 +165,9 @@
       "creativity": 4,
       "adaptability": 5
     },
-    "compatible": "모든 유형과 잘 맞음 (완벽한 적응력으로 누구와도 조화롭게 협업 가능한 올라운더)",
-    "compatible_en": "Compatible with all types (All-rounder who can harmoniously collaborate with anyone through perfect adaptability)",
-    "incompatible": "없음 (당신은 모든 상황에 적응하는 완벽한 에이스)",
-    "incompatible_en": "None (You are the perfect ace who adapts to all situations)"
+    "compatible": "모든 유형과 잘 맞음 (누구와도 케미 폭발! 꼰대와는 책임감 듀오, 개그러와는 예능 콤비, MZ와는 혁신 파트너, 자유 영혼과는 번개 여행! 당신이 있으면 회사가 드라마가 됨.)",
+    "compatible_en": "Compatible with all types (Explosive chemistry with everyone! A responsibility duo with boomers, a variety show partner with comedians, an innovation team with MZ, and a spontaneous trip buddy with free spirits. With you, the company becomes a drama!)",
+    "incompatible": "없음 (당신은 회사의 만능 치트키! 어떤 상황, 어떤 유형과도 완벽하게 어울림. 단점은 너무 완벽해서 동료들이 부담스러울 수 있다는 점뿐!)",
+    "incompatible_en": "None (You are the company's all-purpose cheat code! You fit perfectly with any situation and type. The only downside? Your perfection might overwhelm your colleagues!)"
   }
 ]
